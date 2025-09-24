@@ -1,0 +1,19 @@
+meta {
+  name: GET TODOS
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://jsonplaceholder.typicode.com/todos/?id=2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 2
+}
+
+settings {
+  encodeUrl: true
+}
